@@ -4,10 +4,10 @@ spring:
   application:
     name: api-gateway
   rabbitmq:
-    virtual-host: /leyou
-    username: /leyou
-    password: leyou
-    host: 192.168.19.121
+    virtual-host: /
+    username: guest
+    password: guest
+    host: 39.100.229.253
 eureka:
   client:
     service-url:
@@ -50,7 +50,7 @@ hystrix:
 leyou:
   jwt:
     cookieName: LY_TOKEN
-    pubKeyPath: G:\\tmp\\rsa\\rsa.pub # 公钥地址
+    pubKeyPath: /Users/hins/Documents/MyCode/leyou/rsa_data/rsa.pub # 公钥地址
   filter:
     allowPaths:
        /api/auth

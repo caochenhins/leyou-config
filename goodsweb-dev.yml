@@ -6,12 +6,12 @@ spring:
   thymeleaf:
     cache: false
   rabbitmq:
-    host: 192.168.19.121
-    username: /leyou
-    password: leyou
-    virtual-host: /leyou
+    host: 39.100.229.253
+    username: guest
+    password: guest
+    virtual-host: /
   redis:
-    host: 192.168.19.121
+    host: 39.100.229.253
 eureka:
   client:
     service-url:

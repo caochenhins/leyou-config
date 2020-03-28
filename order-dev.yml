@@ -4,22 +4,22 @@ spring:
   application:
     name: order-service
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/leyou?useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true&useSSL=false
+    url: jdbc:mysql://rm-bp1iqh54v55enx5dbzo.mysql.rds.aliyuncs.com:3306/leyou?useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true&useSSL=false
     username: root
-    password: 123456
+    password: beijingren@1
     hikari:
       maximum-pool-size: 200
       minimum-idle: 100
   rabbitmq:
-    host: 192.168.19.121
-    username: /leyou
-    password: leyou
-    virtual-host: /leyou
+    host: 39.100.229.253
+    username: guest
+    password: guest
+    virtual-host: /
     template:
       queue: leyou.order.delay.queue
     publisher-confirms: true
   redis:
-    host: 192.168.19.121
+    host: 39.100.229.253
 eureka:
   client:
     service-url:
@@ -56,7 +56,7 @@ leyou:
     dataCenterId: 1
   jwt:
     cookieName: LY_TOKEN
-    pubKeyPath: G:\\tmp\\rsa\\rsa.pub # 公钥地址
+    pubKeyPath: /Users/hins/Documents/MyCode/leyou/rsa_data/rsa.pub # 公钥地址
   pay:
     appId: wx8397f8696b538317
     mchId: 1473426802
