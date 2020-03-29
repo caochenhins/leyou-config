@@ -6,7 +6,7 @@ spring:
   data:
     elasticsearch:
       cluster-name: elasticsearch
-      cluster-nodes: 39.100.229.253:9300
+      cluster-nodes: 127.0.0.1:9300
   rabbitmq:
     virtual-host: /
     username: guest
