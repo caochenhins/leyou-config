@@ -23,8 +23,8 @@ spring:
     cache:
       period: 3600m
 ribbon:
-  ConnectTimeout: 14000 # 连接超时时间(ms)
-  ReadTimeout: 12000 # 通信超时时间(ms)
+  ConnectTimeout: 25000 # 连接超时时间(ms)
+  ReadTimeout: 22000 # 通信超时时间(ms)
   OkToRetryOnAllOperations: true # 是否对所有操作重试
   MaxAutoRetriesNextServer: 1 # 同一服务不同实例的重试次数
   MaxAutoRetries: 1 # 同一实例的重试次数
@@ -34,7 +34,7 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMillisecond: 10000 # 熔断超时时长：10000ms
+            timeoutInMillisecond: 20000 # 熔断超时时长：10000ms
 eureka:
   client:
     service-url:
